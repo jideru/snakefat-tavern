@@ -1,0 +1,193 @@
+/* Fun adventurous font for homepage logo text */
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.adventure-font {
+  font-family: 'Pirata One', cursive, fantasy, serif;
+  color: #3a2200;
+  letter-spacing: 0.04em;
+  text-shadow: 2px 2px 0 #ffe7a0, 0 2px 6px #00000033;
+}
+
+body{margin:0;font-family:serif;background:#f7f3ed}
+.container{max-width:1100px;margin:auto;padding:20px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+
+.info-card-multi {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 220px;
+}
+
+.info-card-retainer {
+  background: #ede6fa;
+  border-radius: 10px;
+  padding: 12px 14px 10px 14px;
+  border: 1px solid #c7b3e6;
+}
+.info-card-hireling {
+  background: #ffe7c2;
+  border-radius: 10px;
+  padding: 12px 14px 10px 14px;
+  border: 1px solid #e6cfa3;
+}
+.info-card-shares {
+  background: #f6eee3;
+  border-radius: 10px;
+  padding: 12px 14px 10px 14px;
+  border: 1px solid #d6c3a3;
+}
+
+.info-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.info-card p {
+  margin: 0 0 16px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.party-section {
+  flex: 1;
+}
+
+.groupbox{border:1px solid rgba(0,0,0,0.12);border-radius:14px;background:#fff;padding:18px 18px 14px;margin-bottom:24px}
+.groupbox.party{border:2px solid #000;background:#f3f3f3}
+.groupbox h2{margin:0 0 12px;font-size:1.1rem;letter-spacing:0.02em}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,.08);
+  border:1px solid rgba(0,0,0,0.25);
+  font-size: 12px;
+}
+
+.card-header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.card-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+.card-image {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.25);
+}
+
+.ability-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(40px, 1fr));
+  gap: 6px;
+  width: 100%;
+}
+
+.ability {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px 8px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+.ability-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(0,0,0,0.55);
+}
+
+.ability-value {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.basic-stats {
+  font-size: 11px;
+  color: rgba(0,0,0,0.8);
+  padding: 6px 8px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.12);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.save-line {
+  font-size: 11px;
+  color: rgba(0,0,0,0.7);
+  padding: 6px 8px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.12);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-image {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.25);
+}
+
+.player{background:#fff;border:2px solid rgba(0,100,0,0.5)}
+.hireling{background:#fff;border:2px solid rgba(255,140,0,0.5)}
+.retainer{background:#fff;border:2px solid rgba(75,0,130,0.5)}
+.npc{background:#fff;border:2px solid rgba(0,0,0,0.15)}
+
+.stat-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:5px;
+margin-top:5px;
+}
+
