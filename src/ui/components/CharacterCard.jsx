@@ -36,7 +36,7 @@ export default function CharacterCard({ c }) {
           )}
 
           <div className="card-header-info">
-            <h2>{c.name}</h2>
+            <b style={{ fontSize: '1.5em' }}>{c.name}</b>
             {c.role === 'retainer' && (
               <p style={{ margin: 0, fontSize: '0.85em', letterSpacing: '0.08em' }}>
                 RETAINER
