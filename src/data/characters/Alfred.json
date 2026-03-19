@@ -44,13 +44,15 @@
   "wisModifierToSpells": 1,
   "morale": 1,
   "thief_skills_d6": {
-      "Open Locks": 1,
-      "Find Traps": 1,
-      "Remove Traps": 1,
-      "Climb Walls": 5,
-      "Move Silently": 2,
-      "Hide in Shadows": 1,
-      "Pick Pockets": 2,
-      "Hear Noise": 1
-    }
+    "Open Locks": 1,
+    "Find Traps": 1,
+    "Remove Traps": 1,
+    "Climb Walls": 1,
+    "Move Silently": 2,
+    "Hide in Shadows": 1,
+    "Pick Pockets": 2,
+    "Hear Noise": 1
+  },
+  "spells": [],
+  "fullImage": ""
 }

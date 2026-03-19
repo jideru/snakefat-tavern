@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import CharacterToolTip from './CharacterToolTip.jsx';
 
 export default function CharacterCard({ c }) {
@@ -21,7 +22,14 @@ export default function CharacterCard({ c }) {
 
   return (
     <>
-      <div className={`card ${c.role}`} onMouseEnter={handleMouseEnter} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+      <Link
+        to={`/character/${encodeURIComponent(c.name)}`}
+        className="card-link"
+        onMouseEnter={handleMouseEnter}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className={`card ${c.role}`}>
         <div className="card-header">
           {imageSrc && (
             <img className="card-image" src={imageSrc} alt={`${c.name} thumbnail`} />
@@ -100,7 +108,8 @@ export default function CharacterCard({ c }) {
             </p>
           )}
         </div>
-      </div>
+        </div>
+      </Link>
       {showTooltip && <CharacterToolTip character={c} position={tooltipPosition} />}
     </>
   );

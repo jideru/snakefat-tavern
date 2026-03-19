@@ -52,5 +52,7 @@
       "Hide in Shadows": 1,
       "Pick Pockets": 2,
       "Hear Noise": 1
-    }
+    },
+  "spells": [],
+  "fullImage": "fullSnikkit.png"
   }

@@ -240,3 +240,357 @@ margin-top:5px;
     display: none;
   }
 }
+
+/* ============================================================
+   CHARACTER SHEET PAGE
+   ============================================================ */
+
+.cs-page {
+  min-height: 100vh;
+  background: #f2ece0;
+  padding: 24px 16px 48px;
+  box-sizing: border-box;
+}
+
+.cs-back-row {
+  max-width: 1100px;
+  margin: 0 auto 16px;
+}
+
+.cs-back-link {
+  font-family: serif;
+  font-size: 0.95rem;
+  color: #4b2e13;
+  text-decoration: none;
+  border: 1px solid #c8aa80;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: #fffaf2;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background 0.15s;
+}
+
+.cs-back-link:hover {
+  background: #f0ddb8;
+}
+
+.cs-sheet {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  background: #fffaf2;
+  border: 2px solid #4b2e13;
+  border-radius: 14px;
+  padding: 28px 28px 32px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+}
+
+/* LEFT COLUMN */
+.cs-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.cs-portrait {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #4b2e13;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+/* RIGHT COLUMN */
+.cs-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.cs-header {
+  border-bottom: 2px solid #4b2e13;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+}
+
+.cs-name {
+  font-size: 2.6rem;
+  margin: 0 0 4px;
+  line-height: 1.1;
+  color: #2a1500;
+}
+
+.cs-identity {
+  font-size: 0.95rem;
+  color: #6b4c1b;
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+
+.cs-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.cs-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Sections */
+.cs-section {
+  border: 1px solid #c8aa80;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cs-section-title {
+  background: #4b2e13;
+  color: #ffe7a0;
+  font-family: 'Pirata One', cursive, fantasy, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+}
+
+.cs-section-body {
+  padding: 8px 10px;
+  background: #fffaf2;
+}
+
+/* Ability score grid */
+.cs-abilities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.cs-stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #c8aa80;
+  border-radius: 6px;
+  padding: 6px 4px 4px;
+  background: #f9f2e3;
+}
+
+.cs-stat-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b4c1b;
+}
+
+.cs-stat-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2a1500;
+  margin-top: 2px;
+}
+
+/* Generic rows */
+.cs-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 3px 0;
+  border-bottom: 1px dotted #e0cba8;
+  font-size: 0.85rem;
+  gap: 8px;
+}
+
+.cs-row:last-child {
+  border-bottom: none;
+}
+
+.cs-row-label {
+  color: #4b2e13;
+  font-weight: 600;
+}
+
+.cs-row-value {
+  color: #2a1500;
+  font-weight: 700;
+  text-align: right;
+}
+
+.cs-bio {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #3a2200;
+}
+
+/* Bio only shown in right col on mobile */
+.cs-bio-mobile {
+  display: none;
+  margin-top: 14px;
+}
+
+/* card link reset */
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 12px;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.card-link:hover .card {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  transform: translateY(-2px);
+}
+
+/* ---- Character page responsive ---- */
+@media (max-width: 768px) {
+  .cs-sheet {
+    flex-direction: column;
+    padding: 16px 14px 24px;
+    gap: 16px;
+  }
+
+  .cs-left {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .cs-portrait {
+    display: none;
+  }
+
+  /* Hide bio in left col on mobile, show it below right col */
+  .cs-left .cs-section {
+    display: none;
+  }
+
+  .cs-bio-mobile {
+    display: block;
+  }
+
+  .cs-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-name {
+    font-size: 1.8rem;
+  }
+}
+
+/* ---- Spells Box ---- */
+.cs-spells-box {
+  max-width: 1100px;
+  margin: 24px auto 0;
+  background: #fffaf2;
+  border: 2px solid #4b2e13;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+}
+
+.cs-spells-title {
+  background: #4b2e13;
+  color: #ffe7a0;
+  font-family: 'Pirata One', cursive, fantasy, serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 24px;
+}
+
+.cs-spells {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cs-spell {
+  border-left: 3px solid #c8aa80;
+  padding-left: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0cba8;
+}
+
+.cs-spell:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cs-spell-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.cs-spell-name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2a1500;
+}
+
+.cs-spell-level {
+  font-size: 0.8rem;
+  color: #6b4c1b;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.cs-spell-detail {
+  margin-bottom: 6px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #3a2200;
+}
+
+.cs-spell-detail strong {
+  color: #4b2e13;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .cs-spells-box {
+    margin: 16px -16px 0;
+    border-radius: 0;
+  }
+
+  .cs-spells-title {
+    padding: 6px 14px;
+  }
+
+  .cs-spells {
+    padding: 12px 14px;
+    gap: 14px;
+  }
+
+  .cs-spell {
+    padding-left: 10px;
+    border-left-width: 2px;
+  }
+
+  .cs-spell-name {
+    font-size: 0.95rem;
+  }
+
+  .cs-spell-detail {
+    font-size: 0.8rem;
+  }
+}
