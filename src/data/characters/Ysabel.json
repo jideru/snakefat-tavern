@@ -52,5 +52,7 @@
     "Hide in Shadows": 0,
     "Pick Pockets": 0,
     "Hear Noise": 0
-  }
+  },
+  "spells": [],
+  "fullImage": ""
 }
