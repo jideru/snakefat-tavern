@@ -183,8 +183,8 @@ export default function CharacterPage() {
 
       {/* Spells Box */}
       {c.spells && c.spells.length > 0 && (
-        <div className="cs-spells-box">
-          <div className="cs-spells-title">Spells</div>
+        <div className="cs-spells-box cs-spells-icon-box">
+          <img src="/assets/thumbs/spellbook.png" alt="Spells" className="cs-spells-icon" />
           <div className="cs-spells">
             {c.spells.map((spell, idx) => (
               <div key={idx} className="cs-spell">
