@@ -11,7 +11,7 @@ export default function HomePage() {
     <div className="container">
       <div className="logo-row">
         <img src="/assets/images/aa2.png" alt="The Tavern Logo" style={{ minWidth: '196px', minHeight: '196px', width: '196px', height: '196px', marginRight: '18px', objectFit: 'contain' }} />
-        <img src="/assets/images/logotext.png" alt="The Tavern Logo" style={{ marginRight: '18px', objectFit: 'contain', height: '96px' }} />
+        <img src="/assets/images/logotext.png" alt="The Tavern Logo Text" className="logotext-img" style={{ marginRight: '18px', objectFit: 'contain', height: '96px' }} />
       </div>
 
       <div className="main-content">
