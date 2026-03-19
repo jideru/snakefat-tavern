@@ -44,6 +44,12 @@ export default function CharacterPage() {
 
   const imageSrc = c.fullImage ? `/assets/images/characters/${c.fullImage}` : null;
 
+  const abilityMod = (score) => {
+    if (score === undefined || score === null) return null;
+    const mod = Math.floor((score - 10) / 2);
+    return `${score} (${mod >= 0 ? "+" : ""}${mod})`;
+  };
+
   const hasThiefSkills = c.thief_skills_d6 &&
     Object.values(c.thief_skills_d6).some((v) => v > 0);
 
@@ -95,12 +101,12 @@ export default function CharacterPage() {
               {/* Ability Scores */}
               <SectionBox title="Ability Scores">
                 <div className="cs-abilities">
-                  <StatBox label="STR" value={c.str} />
-                  <StatBox label="DEX" value={c.dex} />
-                  <StatBox label="CON" value={c.con} />
-                  <StatBox label="INT" value={c.int} />
-                  <StatBox label="WIS" value={c.wis} />
-                  <StatBox label="CHA" value={c.cha} />
+                  <StatBox label="STR" value={abilityMod(c.str)} />
+                  <StatBox label="DEX" value={abilityMod(c.dex)} />
+                  <StatBox label="CON" value={abilityMod(c.con)} />
+                  <StatBox label="INT" value={abilityMod(c.int)} />
+                  <StatBox label="WIS" value={abilityMod(c.wis)} />
+                  <StatBox label="CHA" value={abilityMod(c.cha)} />
                 </div>
               </SectionBox>
 
@@ -207,6 +213,18 @@ export default function CharacterPage() {
                   </div>
                 )}
               </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Gear Box */}
+      {c.gear && c.gear.length > 0 && (
+        <div className="cs-spells-box cs-gear-box">
+          <img src="/assets/images/burlap-sack.svg" alt="Gear" className="cs-gear-icon" />
+          <div className="cs-gear">
+            {c.gear.map((item, idx) => (
+              <div key={idx} className="cs-gear-item">{item}</div>
             ))}
           </div>
         </div>

@@ -569,6 +569,38 @@ margin-top:5px;
   margin-right: 4px;
 }
 
+/* Gear Box */
+.cs-spells-box.cs-gear-box {
+  position: relative;
+}
+
+.cs-gear-icon {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  height: 55px;
+  width: auto;
+  z-index: 5;
+}
+
+.cs-gear {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 14px 14px 85px;
+}
+
+.cs-gear-item {
+  font-size: 0.9rem;
+  color: #3a2200;
+  padding: 6px 0;
+  border-bottom: 1px dotted #e0cba8;
+}
+
+.cs-gear-item:last-child {
+  border-bottom: none;
+}
+
 @media (max-width: 768px) {
   .cs-spells-box {
     margin: 16px -16px 0;

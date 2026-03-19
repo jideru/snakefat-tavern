@@ -54,5 +54,6 @@
       "Hear Noise": 1
     },
   "spells": [],
-  "fullImage": "DenJeff.jpeg"
+  "fullImage": "DenJeff.jpeg",
+  "gear": ["Longsword", "Crossbow", "Leather Armor"]
 }

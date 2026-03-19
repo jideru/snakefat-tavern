@@ -54,5 +54,6 @@
       "Hear Noise": 0
     },
   "spells": [],
-  "fullImage": "fullBarbie.png"
-  }
+  "fullImage": "fullBarbie.png",
+  "gear": ["Greataxe", "Throwing Axe", "Leather Armor"]
+}

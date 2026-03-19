@@ -1,0 +1,58 @@
+<svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Defining gradients -->
+  <defs>
+    <linearGradient id="backpackGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c41e3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b1428;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="strapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a4a4a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Left strap -->
+  <path d="M 35 10 Q 32 50, 35 120" fill="none" stroke="url(#strapGradient)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Right strap -->
+  <path d="M 85 10 Q 88 50, 85 120" fill="none" stroke="url(#strapGradient)" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Main backpack body -->
+  <rect x="28" y="35" width="64" height="90" rx="8" fill="url(#backpackGradient)" stroke="#5a0f1f" stroke-width="2.5"/>
+  
+  <!-- Backpack front panel (slightly different shade for depth) -->
+  <rect x="30" y="37" width="60" height="86" rx="6" fill="#d4254f" opacity="0.9" stroke="#5a0f1f" stroke-width="1.5"/>
+  
+  <!-- Top flap -->
+  <path d="M 32 35 Q 60 15, 88 35" fill="#a01830" stroke="#5a0f1f" stroke-width="2"/>
+  
+  <!-- Zipper -->
+  <line x1="60" y1="45" x2="60" y2="105" stroke="#888888" stroke-width="2" stroke-dasharray="3,3"/>
+  <circle cx="60" cy="50" r="2.5" fill="#666666"/>
+  
+  <!-- Front pocket -->
+  <rect x="38" y="55" width="44" height="32" rx="3" fill="#c41e3a" stroke="#5a0f1f" stroke-width="1.5"/>
+  <!-- Pocket detail -->
+  <line x1="38" y1="70" x2="82" y2="70" stroke="#5a0f1f" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Left side stitching -->
+  <g stroke="#5a0f1f" stroke-width="1" opacity="0.6">
+    <line x1="32" y1="45" x2="32" y2="105"/>
+    <line x1="35" y1="45" x2="35" y2="105"/>
+  </g>
+  
+  <!-- Right side stitching -->
+  <g stroke="#5a0f1f" stroke-width="1" opacity="0.6">
+    <line x1="85" y1="45" x2="85" y2="105"/>
+    <line x1="88" y1="45" x2="88" y2="105"/>
+  </g>
+  
+  <!-- Bottom padding -->
+  <ellipse cx="60" cy="121" rx="30" ry="6" fill="#a01830" stroke="#5a0f1f" stroke-width="2"/>
+  
+  <!-- Strap anchors -->
+  <rect x="33" y="32" width="8" height="6" rx="2" fill="#888888"/>
+  <rect x="79" y="32" width="8" height="6" rx="2" fill="#888888"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="60" cy="135" rx="35" ry="8" fill="#000000" opacity="0.15"/>
+</svg>

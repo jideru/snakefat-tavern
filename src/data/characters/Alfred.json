@@ -54,5 +54,6 @@
     "Hear Noise": 1
   },
   "spells": [],
-  "fullImage": ""
+  "fullImage": "",
+  "gear": ["Mace", "Leather Armor", "Adventurer's Ring"]
 }

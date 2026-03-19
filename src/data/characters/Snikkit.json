@@ -54,5 +54,6 @@
       "Hear Noise": 1
     },
   "spells": [],
-  "fullImage": "fullSnikkit.png"
+  "fullImage": "fullSnikkit.png",
+    "gear": ["Longsword", "Chainmail", "Steel Shield", "Adventurer's Ring"]
   }
