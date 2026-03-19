@@ -32,7 +32,7 @@ export default function HomePage() {
 
         <div className="party-section">
           <section className="groupbox party">
-            <h2 style={{ margin: 0 }}>The Snakefat Four</h2>
+            <h2>Snakefat Four</h2>
             <div style={{ fontSize: '1em', color: '#6b4c1b', margin: '6px 0 14px 2px', fontWeight: 500, letterSpacing: '0.01em' }}>
               They earned their name by being the survivors of the Darkspire Expedition
             </div>

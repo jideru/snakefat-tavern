@@ -68,9 +68,9 @@ body{margin:0;font-family:serif;background:#f7f3ed;overflow-x:hidden}
   flex: 1;
 }
 
-.groupbox{border:1px solid rgba(0,0,0,0.12);border-radius:14px;background:#fff;padding:18px 18px 14px;margin-bottom:24px;overflow:hidden}
-.groupbox.party{border:2px solid #000;background:#f3f3f3}
-.groupbox h2{margin:0 0 12px;font-size:1.1rem;letter-spacing:0.02em}
+.groupbox{border:1px solid #c8aa80;border-radius:14px;background:#fffaf2;padding:18px 18px 14px;margin-bottom:24px;overflow:hidden}
+.groupbox.party{border:2px solid #4b2e13;background:#fffaf2}
+.groupbox h2{background:#4b2e13;color:#ffe7a0;font-family:'Pirata One',cursive,fantasy,serif;letter-spacing:0.1em;font-size:1.15rem;text-transform:uppercase;padding:8px 18px;margin:-18px -18px 14px -18px}
 
 .card{
   display: flex;
@@ -214,6 +214,9 @@ margin-top:5px;
     box-sizing: border-box;
     width: 100%;
     padding: 10px 8px 8px;
+  }
+  .groupbox h2 {
+    margin: -10px -8px 12px -8px;
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
