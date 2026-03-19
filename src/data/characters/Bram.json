@@ -54,6 +54,6 @@
       "Hear Noise": 0
     },
   "spells": [],
-  "fullImage": "",
+  "fullImage": "hirelingFull1.png",
   "gear": ["Club", "Torch", "Lantern"]
 }

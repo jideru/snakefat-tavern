@@ -221,7 +221,7 @@ export default function CharacterPage() {
       {/* Gear Box */}
       {c.gear && c.gear.length > 0 && (
         <div className="cs-spells-box cs-gear-box">
-          <img src="/assets/images/burlap-sack.svg" alt="Gear" className="cs-gear-icon" />
+          <img src="/assets/thumbs/backpack.png" alt="Gear" className="cs-gear-icon" />
           <div className="cs-gear">
             {c.gear.map((item, idx) => (
               <div key={idx} className="cs-gear-item">{item}</div>
