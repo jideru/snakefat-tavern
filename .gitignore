@@ -2,3 +2,11 @@
 node_modules/.bin/
 
 node_modules/
+
+public/assets/.DS_Store
+
+public/.DS_Store
+
+public/assets/images/.DS_Store
+
+.DS_Store
