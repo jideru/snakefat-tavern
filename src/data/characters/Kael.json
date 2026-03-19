@@ -1,5 +1,5 @@
 {
-    "name": "Kael Ironhand",
+    "name": "Hrothgar",
     "class": "Barbarian",
     "race": "Human",
     "level": 1,
@@ -18,7 +18,7 @@
     "wandsSave": 14,
     "breathSave": 15,
     "spellSave": 16,
-    "bio": "Kael hails from the frozen northern highlands, where he earned a fearsome reputation as a raider before seeking fortune elsewhere. He’s bold, brash, and trusts his instincts over plans.",
+    "bio": "Hrothgar hails from the frozen northern highlands, where he earned a fearsome reputation as a raider before seeking fortune elsewhere. He’s bold, brash, and trusts his instincts over plans.",
     "hireCost": "1 full share.",
     "hired": false,
     "image": "humanBarbarian.png",
@@ -54,5 +54,5 @@
       "Hear Noise": 0
     },
   "spells": [],
-  "fullImage": ""
+  "fullImage": "fullBarbie.png"
   }
