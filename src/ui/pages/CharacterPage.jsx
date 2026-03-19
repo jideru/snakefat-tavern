@@ -192,8 +192,10 @@ export default function CharacterPage() {
                   </div>
                 )}
                 {spell.effect && (
-                  <div className="cs-spell-detail">
-                    <strong>Effect:</strong> {spell.effect}
+                  <div className="cs-spell-detail effect-detail">
+                    <strong>Effect:</strong>{spell.effect.split('\n').filter(line => line.trim()).map((line, i) => (
+                      <div key={i}>{line.trim()}</div>
+                    ))}
                   </div>
                 )}
                 {spell.duration && (
