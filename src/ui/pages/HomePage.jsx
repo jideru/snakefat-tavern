@@ -10,12 +10,16 @@ export default function HomePage() {
   return (
     <div className="container">
       <div className="logo-row">
-        <img src="/assets/images/aa2.png" alt="The Tavern Logo" style={{ minWidth: '196px', minHeight: '196px', width: '196px', height: '196px',  objectFit: 'contain' }} />
+        <img src="/assets/images/aa2.png" alt="The Tavern Logo" style={{ minWidth: '196px', minHeight: '196px', width: '196px', height: '196px', objectFit: 'contain' }} />
         <img src="/assets/images/adventurerAleBoard.png" alt="The Tavern Logo Text" className="logotext-img" style={{ marginRight: '18px', objectFit: 'contain', height: '196px' }} />
       </div>
 
       <div className="main-content">
-        <div className="info-card-multi">
+        <div className="info-card-col">
+          <a href="https://snakefat-home.vercel.app/" className="home-button">
+            &#8592; Home
+          </a>
+          <div className="info-card-multi">
           <div className="info-card-retainer">
             <h3>Retainers:</h3>
             <p>A retainer is a fully playable npc character that joins the party with a class and level. They are paid a share and put their lives on the line for the party. Retainers have a high loyalty score.</p>
@@ -28,6 +32,7 @@ export default function HomePage() {
             <h3>Shares:</h3>
             <p>Retainers receive a full or part of a share combined with a fee.</p>
           </div>
+        </div>
         </div>
 
         <div className="party-section">

@@ -7,6 +7,35 @@
   margin-bottom: 18px;
 }
 
+.info-card-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-button {
+  width: 220px;
+  box-sizing: border-box;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #4b2e13;
+  background: #3a2200;
+  color: #ffe7a0;
+  text-decoration: none;
+  font-family: 'Pirata One', cursive, fantasy, serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.1;
+  display: block;
+}
+
+.home-button:hover {
+  background: #ffe7a0;
+  color: #3a2200;
+}
+
 .adventure-font {
   font-family: 'Pirata One', cursive, fantasy, serif;
   color: #3a2200;
