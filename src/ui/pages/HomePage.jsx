@@ -19,6 +19,9 @@ export default function HomePage() {
           <a href="https://snakefat-home.vercel.app/" className="home-button">
             &#8592; Home
           </a>
+          <a href="/rumours" className="home-button">
+            Rumours
+          </a>
           <div className="info-card-multi">
           <div className="info-card-retainer">
             <h3>Retainers:</h3>

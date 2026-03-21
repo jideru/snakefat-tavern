@@ -1,0 +1,44 @@
+<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Body -->
+  <ellipse cx="100" cy="180" rx="45" ry="50" fill="#8B4513"/>
+  
+  <!-- Apron -->
+  <path d="M 70 160 L 65 240 L 135 240 L 130 160" fill="#D4AF37" stroke="#8B6914" stroke-width="2"/>
+  
+  <!-- Left arm -->
+  <path d="M 70 160 Q 40 150 35 200" stroke="#C19A6B" stroke-width="12" fill="none" stroke-linecap="round"/>
+  
+  <!-- Right arm -->
+  <path d="M 130 160 Q 160 150 165 200" stroke="#C19A6B" stroke-width="12" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="90" y="140" width="20" height="20" fill="#C19A6B"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="110" r="35" fill="#C19A6B"/>
+  
+  <!-- Hair -->
+  <path d="M 65 95 Q 65 65 100 60 Q 135 65 135 95" fill="#654321"/>
+  
+  <!-- Left eye -->
+  <circle cx="85" cy="105" r="4" fill="#000"/>
+  <circle cx="86" cy="104" r="1.5" fill="#fff"/>
+  
+  <!-- Right eye -->
+  <circle cx="115" cy="105" r="4" fill="#000"/>
+  <circle cx="116" cy="104" r="1.5" fill="#fff"/>
+  
+  <!-- Nose -->
+  <path d="M 100 110 L 100 120" stroke="#A0826D" stroke-width="2"/>
+  
+  <!-- Mouth -->
+  <path d="M 90 125 Q 100 130 110 125" stroke="#8B5A2B" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Beard -->
+  <path d="M 75 125 Q 85 135 100 138 Q 115 135 125 125" fill="#654321" opacity="0.6"/>
+  
+  <!-- Hat -->
+  <rect x="75" y="45" width="50" height="20" fill="#4B0000" rx="3"/>
+  <ellipse cx="100" cy="45" rx="30" ry="8" fill="#8B0000"/>
+  <circle cx="85" cy="35" r="6" fill="#D4AF37"/>
+</svg>
