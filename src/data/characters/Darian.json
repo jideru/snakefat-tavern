@@ -21,7 +21,7 @@
    "bio": "Darian is an apprentice magic user, learning the ways of arcane arts. Spending most of his time within his mentor's tower, he has a curious and inquisitive nature. Darian is also one of the Snakefat Four, a group of adventurers who survived the Darkspire adventure.",
   "hireCost": "0gp",
   "hired": true,
-  "image": "wizard1.png",
+  "image": "darianThumb.png",
   "alignment": "Neutral",
   "maxHp": 3,
   "currentHp": 3,
@@ -79,7 +79,7 @@
         "duration": "1 minute"
       }
   ],
-  "fullImage": "",
+  "fullImage": "Darian.png",
   "gear": ["Masterwork Scythe", "Hand Crossbow", "Spell Components Pouch"]
 }
 

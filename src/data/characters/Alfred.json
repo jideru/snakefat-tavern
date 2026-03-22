@@ -21,7 +21,7 @@
    "bio": "Alfred was one of the survivors of the Darkspire adventure, since then he has also put an end to the plague curse that had befallen Snakefat. He is a devout acolyte of the temple of the elemental sea snake",
   "hireCost": "0gp",
   "hired": true,
-  "image": "warrior3.png",
+  "image": "AlfredThumb.png",
   "alignment": "Neutral",
   "maxHp": 7,
   "currentHp": 7,
@@ -54,6 +54,6 @@
     "Hear Noise": 1
   },
   "spells": [],
-  "fullImage": "",
+  "fullImage": "Alfred.png",
   "gear": ["Mace", "Leather Armor", "Adventurer's Ring"]
 }

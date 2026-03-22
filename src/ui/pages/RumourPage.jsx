@@ -13,10 +13,10 @@ export default function RumourPage() {
   return (
     <div className="container">
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
-        <a href="/" className="rumour-back-link">
+        <a href="/" className="home-button" style={{ width: '100%', maxWidth: '469px', textAlign: 'center' }}>
           &#8592; Back
         </a>
-
+        
         {currentRumour && (
           <div className="speech-bubble">
             <p>{currentRumour}</p>
@@ -27,7 +27,7 @@ export default function RumourPage() {
           <img src="/assets/images/bartender.png" alt="Tavern Owner" className="bartender-image" />
         </div>
 
-        <div style={{ display: 'flex', gap: '16px', marginTop: '8px', width: '100%', maxWidth: '469px', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '16px', width: '100%', maxWidth: '469px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <button onClick={() => getRumour(1)} className="rumour-tile">
             <img src="/assets/images/copperCoins.png" alt="Copper Coins" className="tile-image" />
             <span className="tile-label">5 Copper</span>
