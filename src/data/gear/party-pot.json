@@ -1,0 +1,91 @@
+{
+    "imageThumb": "backpackSquare.png",
+    "image": "partyBackpack.png",
+    "type": "backpack",
+    "partyloot": [
+        {
+            "name": "Copper Coins",
+            "type": "coins",
+            "description": "A sack with copper coins",
+            "quantity": 100
+        },
+        {
+            "name": "Silver Coins",
+            "type": "coins",
+            "description": "A sack with silver coins",
+            "quantity": 50
+        },
+        {
+            "name": "Healing Potion",
+            "type": "potion",
+            "description": "A small vial containing a red liquid that heals wounds when consumed.",
+            "quantity": 3
+        },
+        {
+            "name": "Rope",
+            "type": "gear",
+            "description": "A sturdy rope, useful for climbing or tying things up.",
+            "quantity": 1
+        },
+        {
+            "name": "Torch",
+            "type": "gear",
+            "description": "A wooden stick with a flammable material at one end, used for lighting dark areas.",
+            "quantity": 5
+        },
+        {
+            "name": "Dagger",
+            "type": "weapon",
+            "description": "A small, sharp blade that can be used for close combat or as a tool.",
+            "quantity": 2
+        },
+        {
+            "name": "Map of the Local Area",
+            "type": "gear",
+            "description": "A detailed map showing the surrounding region, including landmarks and potential points of interest.",
+            "quantity": 1
+        },
+        {
+            "name": "Rations",
+            "type": "food",
+            "description": "Packaged food supplies that can sustain a person for several days.",
+            "quantity": 5
+        },
+        {
+            "name": "Flint and Steel",
+            "type": "gear",
+            "description": "A small kit used to start fires by striking flint against steel.",
+            "quantity": 1
+        },
+        {
+            "name": "Small Mirror",
+            "type": "gear",
+            "description": "A compact mirror that can be used for signaling or checking around corners.",
+            "quantity": 1
+        },
+        {
+            "name": "Longsword",
+            "type": "weapon",
+            "description": "A longsword, a versatile weapon suitable for both slashing and thrusting attacks.",
+            "quantity": 1
+        },
+        {
+            "name": "Water Skin",
+            "type": "gear",
+            "description": "A container made of leather or other materials, used for carrying water.",
+            "quantity": 2
+        },
+        {
+            "name": "Bandages",
+            "type": "medical",
+            "description": "Cloth strips used for dressing wounds and stopping bleeding.",
+            "quantity": 5
+        },
+        {
+            "name": "Small Bell",
+            "type": "gear",
+            "description": "A small bell that can be used for signaling or alerting others.",
+            "quantity": 1
+        }
+    ]
+}

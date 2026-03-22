@@ -1,5 +1,6 @@
 
 import CharacterCard from "../components/CharacterCard"
+import PartyLootMarker from "../components/PartyLootMarker"
 import data from "../../data/characters/index.js"
 
 export default function HomePage() {
@@ -39,17 +40,20 @@ export default function HomePage() {
         </div>
 
         <div className="party-section">
-          <section className="groupbox party">
-            <h2>Snakefat Four</h2>
-            <div style={{ fontSize: '1em', color: '#6b4c1b', margin: '6px 0 14px 2px', fontWeight: 500, letterSpacing: '0.01em' }}>
-              They earned their name by being the survivors of the Darkspire Expedition
-            </div>
-            <div className="grid">
-              {party.map((c) => (
-                <CharacterCard key={c.name} c={c} />
-              ))}
-            </div>
-          </section>
+          <div style={{ position: 'relative' }}>
+            <section className="groupbox party">
+              <h2>Snakefat Four</h2>
+              <div style={{ fontSize: '1em', color: '#6b4c1b', margin: '6px 0 14px 2px', fontWeight: 500, letterSpacing: '0.01em' }}>
+                They earned their name by being the survivors of the Darkspire Expedition
+              </div>
+              <div className="grid">
+                {party.map((c) => (
+                  <CharacterCard key={c.name} c={c} />
+                ))}
+              </div>
+            </section>
+            <PartyLootMarker />
+          </div>
 
           <section className="groupbox for-hire">
             <h2>For Hire</h2>
