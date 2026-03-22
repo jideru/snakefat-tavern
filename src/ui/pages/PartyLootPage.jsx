@@ -61,6 +61,50 @@ export default function PartyLootPage() {
             </tbody>
           </table>
         </div>
+
+        <section className="groupbox party" style={{ marginTop: '32px', width: '100%', boxSizing: 'border-box' }}>
+          <h2>Coins</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }}>
+            {item.coins && (() => {
+              const coinOrder = ['Platinums', 'Golds', 'Silvers', 'Coppers'];
+              const sortedCoins = coinOrder.map(type => item.coins.find(c => c.type === type)).filter(Boolean);
+              
+              return sortedCoins.map((coin) => {
+                const coinLabels = {
+                  Platinums: { label: 'Platinum', abbr: 'PP', image: 'PlatinumPlates.png' },
+                  Golds: { label: 'Gold', abbr: 'GP', image: 'goldCoins.png' },
+                  Silvers: { label: 'Silver', abbr: 'SP', image: 'silverCoins.png' },
+                  Coppers: { label: 'Copper', abbr: 'CP', image: 'copperCoins.png' }
+                };
+                const config = coinLabels[coin.type] || { label: coin.type, abbr: '', image: '' };
+                const displayQty = config.abbr ? `${coin.quantity} ${config.abbr}` : coin.quantity;
+
+                return (
+                  <div key={coin.type} style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    gap: '8px',
+                    padding: '16px',
+                    border: '2px solid #c8aa80',
+                    borderRadius: '8px',
+                    background: '#fffaf2',
+                    textAlign: 'center'
+                  }}>
+                    {config.image && (
+                      <img
+                        src={`/assets/images/${config.image}`}
+                        alt={config.label}
+                        style={{ width: '64px', height: '64px', objectFit: 'contain' }}
+                      />
+                    )}
+                    <div style={{ fontSize: '1.2rem', fontWeight: 700, color: '#3a2200' }}>{displayQty}</div>
+                  </div>
+                );
+              });
+            })()}
+          </div>
+        </section>
       </div>
     </div>
   );

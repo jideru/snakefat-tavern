@@ -2,19 +2,25 @@
     "imageThumb": "backpackSquare.png",
     "image": "partyBackpack.png",
     "type": "backpack",
-    "partyloot": [
+    "coins": [
         {
-            "name": "Copper Coins",
-            "type": "coins",
-            "description": "A sack with copper coins",
+            "type": "Coppers",
             "quantity": 100
         },
         {
-            "name": "Silver Coins",
-            "type": "coins",
-            "description": "A sack with silver coins",
+            "type": "Silvers",
             "quantity": 50
         },
+        {
+            "type": "Golds",
+            "quantity": 20
+        },
+        {
+            "type": "Platinums",
+            "quantity": 5
+        }
+    ],
+    "partyloot": [
         {
             "name": "Healing Potion",
             "type": "potion",
