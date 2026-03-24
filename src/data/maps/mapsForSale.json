@@ -1,0 +1,22 @@
+{
+    "maps": [
+        {
+            "name": "The Sunken Ziggurat",
+            "image": "ziggurat_map.png",
+            "description": "The Sunken Ziggurat is an ancient structure that has been submerged underwater for centuries. It is said to be the resting place of a powerful artifact, guarded by aquatic creatures and treacherous currents. Adventurers who dare to explore its depths may find untold riches, but they must also be prepared to face the dangers lurking within.",
+            "price": "500gp"
+        },
+        {
+            "name": "The Arachnid Caverns",
+            "image": "arachnid_caverns_map.png",
+            "description": "The Arachnid Caverns are a network of dark, winding tunnels inhabited by giant spiders and other arachnid creatures. The caverns are rumored to contain hidden treasures and ancient relics, but they are also fraught with danger. Adventurers who venture into these caverns must be cautious, as the spiders are known to be aggressive and territorial. Only the bravest and most skilled adventurers should attempt to explore the Arachnid Caverns.",
+            "price": "300gp"
+        },
+        {
+            "name": "The Forgotten Library",
+            "image": "forgotten_library_map.png",
+            "description": "The Forgotten Library is an ancient repository of knowledge, hidden away in an abandoned mage tower. It is said to contain countless tomes of arcane lore, magical secrets, and forgotten spells. However, the library is protected by powerful enchantments and traps, making it a perilous place for adventurers to explore. Those who manage to navigate its labyrinthine corridors and overcome its defenses may find invaluable knowledge and powerful magical artifacts.",
+            "price": "400gp"
+        }
+    ]
+}

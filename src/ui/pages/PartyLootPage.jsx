@@ -15,8 +15,7 @@ export default function PartyLootPage() {
   if (!item) {
     return (
       <div className="container">
-        <Link to="/" className="cs-back-link">&#8592; Back</Link>
-        <p>Loot not found.</p>
+        <Link to="/" className="cs-back-link">← Back to Tavern</Link>
       </div>
     );
   }
@@ -24,7 +23,7 @@ export default function PartyLootPage() {
   return (
     <div className="container">
       <div className="cs-back-row">
-        <Link to="/" className="cs-back-link">&#8592; Back</Link>
+        <Link to="/" className="cs-back-link">← Back to Tavern</Link>
       </div>
 
       <div className="cs-sheet" style={{ flexDirection: 'column', alignItems: 'flex-start' }}>
