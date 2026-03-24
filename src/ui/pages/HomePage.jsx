@@ -23,6 +23,9 @@ export default function HomePage() {
           <a href="/rumours" className="home-button">
             Rumours
           </a>
+          <a href="/maps" className="home-button">
+            Maps 4 Sale
+          </a>
           <div className="info-card-multi">
           <div className="info-card-retainer">
             <h3>Retainers:</h3>

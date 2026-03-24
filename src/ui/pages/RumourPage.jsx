@@ -12,10 +12,10 @@ export default function RumourPage() {
 
   return (
     <div className="container">
+      <div className="cs-back-row">
+        <a href="/" className="cs-back-link">← Back to Tavern</a>
+      </div>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
-        <a href="/" className="home-button" style={{ width: '100%', maxWidth: '469px', textAlign: 'center' }}>
-          &#8592; Back
-        </a>
         
         {currentRumour && (
           <div className="speech-bubble">
