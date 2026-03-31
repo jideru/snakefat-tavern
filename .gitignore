@@ -12,3 +12,11 @@ public/assets/images/.DS_Store
 .DS_Store
 
 package-lock.json
+
+.env.example
+
+.env
+
+snakefat-tavern.postman_collection.json
+
+src/curls.txt
